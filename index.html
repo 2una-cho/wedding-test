@@ -832,6 +832,28 @@
       font-weight: 700;
       line-height: 1.8;
     }
+   .sign-line {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  gap: 8px;
+  white-space: nowrap;
+}
+
+.sign-parent {
+  min-width: 130px;
+  text-align: right;
+}
+
+.sign-role {
+  min-width: 50px;
+  text-align: center;
+}
+
+.sign-name {
+  min-width: 42px;
+  text-align: right;
+}
 
     /* CAST - 글만 */
     .cast-row {
@@ -2215,8 +2237,16 @@ body.modal-open {
               </div>
 
               <div class="invite-sign">
-                <div class="sign-line"><br />박문길 · 황연희 의 아들 박기수</div>
-                <div class="sign-line">조신용 · 문명희 의 &nbsp;&nbsp;딸 &nbsp;조은아</div>
+               <div class="sign-line"><br />
+  <span class="sign-parent">박문길 · 황연희</span>
+  <span class="sign-role">의 아들</span>
+  <span class="sign-name">박기수</span>
+</div>
+<div class="sign-line">
+  <span class="sign-parent">조신용 · 문명희</span>
+  <span class="sign-role">의 딸</span>
+  <span class="sign-name">조은아</span>
+</div>
               </div>
 
               <div class="flip-hint"><strong>⟡ Click ⟡</strong></div>
